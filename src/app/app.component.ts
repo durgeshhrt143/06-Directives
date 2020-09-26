@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-app';
+  name: any[] = ['durgesh', 26];
+  tabs: string = 'home';
+  courses = [
+    { id: 1, subject: 'hindi' },
+    { id: 2, subject: 'english' },
+    { id: 3, subject: 'math' },
+  ]
+  constructor() {
+    console.log(this.name);
+  }
 }
